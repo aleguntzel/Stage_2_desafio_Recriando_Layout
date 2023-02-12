@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; 
+  background-color:  #2F2E41;
+  
+  min-height: 100vh; /* vh é view port, o tamanho da tela de quem acessa a página */
+  }
+
+.page {
+  width: 1083px;
+  margin: 0 auto;
+  padding-top: 74px;
+}
+
+nav { /* o nav é o menu de navegação. Aqui o nav ocupa também o lugar do header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 98px;
+  font-size: 14px;
+}
+
+ul { /* ul é lista */
+  display: flex;
+  gap: 64px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+a { /* por meio desse comando, foi removido o sublinhado de todos hyperlinks da página */
+  text-decoration: none;
+  color: #ffffff
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a:hover { /* pseudo-class ou sudo-class. Hover é quando o mouse estiver em cima */
+  font-weight: bold;
+  opacity: 1;
+}
+
+main {
+  display: flex; /* aqui mudou a orientação dos elementos dentro do main para ficarem lado a lado. */
+  align-items: center;
+  justify-content: space-between; /* aqui fez os conteúdos do main ficarem alinhados um de cada lado */
+  margin-bottom: 157px;
+}
+
+h1 {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff; /* exite outra forma de escrever o RGB, com apenas 3 dígitos, que tem o porém de ser menos granular. */
+     
+  text-align: center;
+  margin-left: 77px;
+  margin-top: 0px;
+  margin-bottom: 59px;
+}
+
+h1 span {
+  color: #00BFA6;
+  font-weight: bold;
+}
+
+section p { /*  Há apenas um "p" nessa página, porém é bom especificar para caso outro seja acrescentado não dar problema*/
+  font-size: 16px;
+  line-height: 28px;
+  color: #C2C2C2;
+  margin: 40px 0; /* primeiro número é margim superior E inferior, o segundo é direita E esquerda. */
+  text-align: center;
+  margin-left: 77px;
+  }
+
+  p span {
+    color: #00BFA6;
+    font-weight: bold;
+  }
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+  color: #ffffff;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+
+#padlock {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+
+.line {
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 27px;
+
+  border: 1px solid #00BFA6;
+ 
+}
